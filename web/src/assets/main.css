@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* fuentes */
+  --font-sans: 'Poppins', sans-serif;
+
+  /* paleta de colores */
+  --color-brand-abyss: #0F0D1A;
+  --color-brand-surface: #181528;
+  --color-brand-border: #2D264F;
+  --color-brand-text: #FCFCFC;
+  --color-brand-muted: #94A3B8;
+  --color-brand-emerald: #64A882;
+  --color-brand-yellow: #FBBF24;
+  --color-brand-red: #F03E3E;
+}
