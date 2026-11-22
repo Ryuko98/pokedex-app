@@ -1,6 +1,7 @@
 // 1. Librerías principales y de terceros (Core & Libraries)
 import { createApp } from 'vue'
 import * as TablerIcons from '@tabler/icons-vue'
+import 'flyonui/flyonui'
 
 // 2. Módulos locales de la aplicación (Router, Stores, Utils)
 import router from './router'
@@ -21,6 +22,13 @@ for (const [key, component] of Object.entries(TablerIcons)) {
 
 // Usar plugins
 app.use(router)
+
+// Reinicializar componentes interactivos de FlyonUI al cambiar de ruta si hace falta
+router.afterEach(() => {
+  setTimeout(() => {
+    window.HSStaticMethods?.autoInit()
+  }, 100)
+})
 
 // Montar la aplicación
 app.mount('#app')
