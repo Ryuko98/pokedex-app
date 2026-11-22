@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/Home.vue"; 
+import PokedexView from "@/views/PokedexView.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,7 +13,7 @@ const router = createRouter({
         {
             path: '/explorador',
             name: 'explorador',
-            component: Home
+            component: PokedexView
         },
         {
             // ERROR 404
