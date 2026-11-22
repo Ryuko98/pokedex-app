@@ -5,12 +5,13 @@ import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
-  <div class="min-h-screen bg-brand-abyss text-brand-text font-sans antialiased selection:bg-brand-emerald selection:text-brand-abyss">
-    <Navbar/>
+  <div class="min-h-screen bg-alabaster-900 text-alabaster-50 font-sans antialiased selection:bg-alabaster-200 selection:text-alabaster-800 flex flex-col justify-between">
+    <Navbar />
 
-    <main>
-      <RouterView/>
+    <main class="grow w-full">
+      <RouterView />
     </main>
-    <Footer/>
+
+    <Footer />
   </div>
 </template>
