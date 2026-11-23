@@ -29,20 +29,24 @@ const isMenuOpen = ref(false);
       </div>
 
       <!-- navegacion -->
-      <nav class="hidden md:flex items-center gap-1 sm:gap-2">
+      <nav class="hidden md:flex items-center gap-2">
         <RouterLink
           to="/"
-          class="px-3 py-2 rounded-lg text-sm font-medium text-alabaster-400 hover:text-alabaster-50 hover:bg-alabaster-900 transition-all"
-          active-class="text-alabaster-50 bg-alabaster-900"
+          aria-label="Inicio"
+          title="Inicio"
+          class="p-2 rounded-full flex items-center justify-center text-alabaster-400 bg-alabaster-900 hover:text-alabaster-50 hover:bg-alabaster-800 transition-colors duration-150 focus:outline-none"
+          active-class="text-alabaster-50 bg-alabaster-800"
         >
-          Inicio
+          <IconHome/>
         </RouterLink>
         <RouterLink
           to="/explorador"
-          class="px-3 py-2 rounded-lg text-sm font-medium text-alabaster-400 hover:text-alabaster-50 hover:bg-alabaster-900 transition-all"
-          active-class="text-alabaster-50 bg-alabaster-900"
+          aria-label="Explorador"
+          title="Explorador"
+          class="p-2 rounded-full flex items-center justify-center text-alabaster-400 bg-alabaster-900 hover:text-alabaster-50 hover:bg-alabaster-800 transition-colors duration-150 focus:outline-none"
+          active-class="text-alabaster-50 bg-alabaster-800"
         >
-          Explorador
+          <IconList/>
         </RouterLink>
       </nav>
 
